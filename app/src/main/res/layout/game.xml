@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/game"
+    android:background="@drawable/wallpaper">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="false"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:background="@color/video_border_cyan"
+                android:layout_width="325dp"
+                android:layout_height="250dp"
+                android:layout_marginTop="18dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/theFrame">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <VideoView
+                        android:id="@+id/drawing_video"
+                        android:layout_width="match_parent"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_alignParentBottom="true" />
+
+                </RelativeLayout>
+
+            </FrameLayout>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/answerField"
+                android:hint="Your Answer Here..."
+                android:textAlignment="center"
+                android:background="@drawable/main_button_custom"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/timerView"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/timerView"
+                android:background="@drawable/timer_custom"
+                android:textSize="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/theFrame"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/times_up"
+                android:id="@+id/times_up_image"
+                android:layout_above="@+id/hintButton"
+                android:layout_alignParentStart="true"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/woman_saying_yes_emoji"
+                android:id="@+id/yes_image"
+                android:layout_above="@+id/answerField"
+                android:layout_centerHorizontal="true"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/woman_saying_no_emoji"
+                android:id="@+id/no_image"
+                android:layout_above="@+id/answerField"
+                android:layout_alignStart="@+id/yes_image"
+                android:visibility="invisible" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/hint_text"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/answerField"
+                android:layout_marginTop="20dp"
+                android:textSize="25dp" />
+
+            <Button
+                android:text="Submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/submitButton"
+                android:background="@drawable/main_button_custom"
+                android:onClick="onSubmitButtonClick"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/hint_text"
+                android:layout_marginTop="20dp" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

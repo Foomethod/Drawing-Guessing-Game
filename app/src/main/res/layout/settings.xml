@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/settings"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper">
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:id="@+id/volume_bar"
+        android:layout_below="@+id/ab_CheckBox"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="50dp" />
+
+    <CheckBox
+        android:text="Automatic Brightness"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/ab_CheckBox"
+        android:checked="false"
+        android:layout_below="@+id/percentageView"
+        android:layout_centerHorizontal="true"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:text="VP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:layout_marginEnd="30dp"
+        android:layout_alignTop="@+id/volume_bar"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/BLACK"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:text="Settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView5"
+        android:textSize="40dp"
+        android:textColor="@color/BLACK" />
+
+    <TextView
+        android:text="Brightness"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/percentageView"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView6"
+        android:textColor="@color/BLACK"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:text="Volume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:id="@+id/textView7"
+        android:textColor="@color/BLACK"
+        android:textStyle="normal|bold" />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="60dp"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/percentageView"
+        android:text="BP"
+        android:textColor="@color/BLACK"
+        android:textStyle="normal|bold"
+        android:layout_alignTop="@+id/seekBar"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="Back"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="17dp"
+        android:id="@+id/button4"
+        android:background="@drawable/main_button_custom"
+        android:onClick="backButton"
+        android:elevation="13dp"
+        android:layout_width="200dp"
+        android:layout_above="@+id/exitButton"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/exitButton"
+        android:background="@drawable/exit_button_custom"
+        android:onClick="onExitButtonClick"
+        android:layout_marginBottom="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/button4"
+        android:layout_alignEnd="@+id/button4" />
+</RelativeLayout>

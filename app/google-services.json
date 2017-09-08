@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "584755173349",
+    "firebase_url": "https://drawing-game.firebaseio.com",
+    "project_id": "drawing-game",
+    "storage_bucket": "drawing-game.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:584755173349:android:c40200753ceb7f37",
+        "android_client_info": {
+          "package_name": "com.example.yumak.fyp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "584755173349-ahc6s907cjibo3j7sbnic52khptcg6ov.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.yumak.fyp",
+            "certificate_hash": "8ede84809c63f9da8a78c91fb9bcf224df2ac970"
+          }
+        },
+        {
+          "client_id": "584755173349-7n7oldsiuraj90d9bio7iksc37831lfl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpkqwNBX9sqySmmwelTXn6ihdBZLtWpz0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "584755173349-7n7oldsiuraj90d9bio7iksc37831lfl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

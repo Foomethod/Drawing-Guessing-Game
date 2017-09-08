@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper"
+    tools:context="com.example.yumak.fyp.MainActivity">
+
+    <TextView
+        android:text="Username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/displayUsername"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:background="#A59c9c9c" />
+
+    <Button
+        android:text="quick play"
+        android:id="@+id/button2"
+        android:background="@drawable/round_button"
+        android:textSize="30dp"
+        android:layout_height="180dp"
+        android:layout_width="180dp"
+        android:onClick="openDrawer"
+        android:layout_below="@+id/displayUsername"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="9dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" />
+
+    <Button
+        android:text="Personal Best"
+        android:layout_width="wrap_content"
+        android:id="@+id/trophy_button"
+        android:background="@drawable/banner"
+        android:layout_marginLeft="50dp"
+        android:textSize="20dp"
+        android:paddingLeft="20dp"
+        android:drawableLeft="@drawable/ic_android_black_24dp"
+        android:layout_height="60dp"
+        android:paddingRight="20dp"
+        android:layout_below="@+id/button2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp"
+        android:onClick="openGameRecord" />
+
+    <Button
+        android:text="Settings"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_below="@+id/trophy_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:id="@+id/button3"
+        android:layout_alignLeft="@+id/trophy_button"
+        android:layout_alignRight="@+id/trophy_button"
+        android:drawableLeft="@drawable/ic_settings_black_24dp"
+        android:textSize="20dp"
+        android:background="@drawable/banner"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:onClick="openSettings" />
+
+</RelativeLayout>
